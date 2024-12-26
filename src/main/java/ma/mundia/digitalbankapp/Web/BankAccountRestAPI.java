@@ -5,14 +5,12 @@ import ma.mundia.digitalbankapp.Dtos.AccountOperationDTO;
 import ma.mundia.digitalbankapp.Dtos.BankAccountDTO;
 import ma.mundia.digitalbankapp.Exceptions.BankAccountNotFoundException;
 import ma.mundia.digitalbankapp.Services.BankAccountService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 public class BankAccountRestAPI {
     private BankAccountService bankAccountService;
 
